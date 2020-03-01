@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="center">Simple Calculator</h1>
+    </header>
+    <main>
+        <div id="calculator" class="center">
+            <input type="text" id="inputText" class="span4x">
+
+            <button id="CE" class="extraButton span2x" onclick="clearExpression()">CE</button>
+            <button id="C" class="extraButton span2x" onclick="clearRecentExpression()">C</button>
+
+            <button id="1" class="numberButton" onclick="pressedButton(this.id)">1</button>
+            <button id="2" class="numberButton" onclick="pressedButton(this.id)">2</button>
+            <button id="3" class="numberButton" onclick="pressedButton(this.id)">3</button>
+            <button id="/" class="operatorButton" onclick="pressedButton(this.id)">/</button>
+
+            <button id="4" class="numberButton" onclick="pressedButton(this.id)">4</button>
+            <button id="5" class="numberButton" onclick="pressedButton(this.id)">5</button>
+            <button id="6" class="numberButton" onclick="pressedButton(this.id)">6</button>
+            <button id="*" class="operatorButton" onclick="pressedButton(this.id)">*</button>
+
+            <button id="7" class="numberButton" onclick="pressedButton(this.id)">7</button>
+            <button id="8" class="numberButton" onclick="pressedButton(this.id)">8</button>
+            <button id="9" class="numberButton" onclick="pressedButton(this.id)">9</button>
+            <button id="-" class="operatorButton" onclick="pressedButton(this.id)">-</button>
+
+            <button id="0" class="numberButton" onclick="pressedButton(this.id)">0</button>
+            <button id="." class="numberButton" onclick="pressedButton(this.id)">.</button>
+            <button id="=" class="equalButton" onclick="result()">=</button>
+            <button id="+" class="operatorButton" onclick="pressedButton(this.id)">+</button>
+        </div id="calculator">
+    </main>
+    <footer>
+        <p class="center">Created by Aritro Sinha with HTML, CSS and JS.</p>
+    </footer>
+</body>
+
+</html>
